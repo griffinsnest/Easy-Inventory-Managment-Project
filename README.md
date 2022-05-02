@@ -1,1 +1,1 @@
-# Easy-Inventory-Managment-Project
+# Easy-Inventory-Manager-Project

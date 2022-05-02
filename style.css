@@ -1,0 +1,190 @@
+html {
+    background-color: #353535;
+    color: #e3e3e3;
+    font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+    text-align: center;
+}
+head {
+    margin-left: 160px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    color: #f95959;    
+}
+input[type=text], input[type=password], input[type=submit], input[type=button], input[type=email], select, option, button{
+    background-color: #565656;
+    border-radius: 3px;
+    border: 1px solid #770303;
+    color: #e3e3e3;
+    transition: all .25s ease-in-out;
+}
+input[type=text]:hover, input[type=password]:hover, input[type=submit]:hover, input[type=button]:hover,input[type=email]:hover, select:hover, option:hover, button:hover {
+    background-color: #e3e3e3;
+    color: #233142;
+    transform: scale(1.02);
+}
+table {
+    background-color: #565656;
+    border-radius: 3px;
+    color: #e3e3e3;
+    text-align: center;
+    margin: 0 auto;
+}
+tr, td {
+    padding: 1vw;
+    border: 1px solid #770303;
+}
+.removeUser {
+    padding: .3vw;
+    background-color: #233142; 
+    transition: all .25s ease-in-out;
+    font-size: .8vw;
+}
+.removeUser:hover {
+    background-color: #e3e3e3;
+    color: #233142;
+    transform: scale(1.05);
+}
+
+#userTableDiv {
+    padding-left: 5%;
+    padding-right: 5%;
+    float: left;
+}
+#userTableDiv input[type=text], input[type=password], input[type=submit], input[type=button],select, option, button{
+    background-color: #565656;
+    border-radius: 3px;
+    border: 1px solid #770303;
+    color: #e3e3e3;
+    transition: all .25s ease-in-out;
+    font-size: 1vw;
+}
+input[name=stockChange] {
+        width: 40px;
+        font-size: 1.5vw;
+    }
+#userSpaceDiv {
+    height: 500px;
+}
+#usersFormMsg {
+    text-align: center;
+    width: 20%;
+    padding-left: 40%;
+    padding-right: 40%;
+}
+#usersFormMsg h2 {
+    background-color: #455d7a;
+    border-radius: 5px;
+    border: 4px solid #770303;
+}
+#topUsersDiv {
+    display: block;
+    width: 40%;
+    padding-left: 5%;
+    padding-right: 5%;
+    float: left;
+}
+#addUserDiv {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 1.3vw;
+}
+#updateUserDiv {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 1.3vw;
+}
+.main {
+  margin-left: 160px;
+  padding: 0px 10px;
+}
+/* https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp */
+#sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+#sidenav button {
+    font-size: 1.3vw;
+    margin: auto;
+    margin-bottom: .6vw;
+    display: block;
+    text-align: center;
+    border: 4px solid #770303;
+    height: 80px;
+    width: 160px
+}
+.error {
+    color: red;
+    font-weight: bold;
+}
+@media only screen and (max-width: 640px) {
+    #sidenav {
+        width: 120px;
+    }
+    #sidenav button {
+        min-height: 40px;
+        width: 120px;
+        font-size: 2.5vw;
+    }
+    .main {
+        margin-left: 120px;
+    }
+    .head {
+        margin-left: 120px;
+    }
+    input[type=text], input[type=password], input[type=submit], input[type=button], select, option, button {
+        min-height: 30px;
+        min-width: 90px;
+        font-size: 2.5vw;
+    }
+    input[name=stockChange] {
+        width: 40px;
+        font-size: 1.5vw;
+    }
+    input[name=add], input[name=sub], input[name=stockChange] {
+        min-height: 10px;
+        max-width: 40px;
+        font-size: 1.5vw;
+    }
+    #userSpaceDiv {
+        height: 0px;
+    }
+    #updateUserDiv {
+        display: block;
+        font-size: 3vw;
+        float: none;
+    }
+    #addUserDiv {
+        display: block;
+        font-size: 3vw;
+        float: none;
+    }
+    #topUsersDiv {
+        width: 100%;
+        float: none;
+    }
+    #bottomUsersDiv {
+        display: block;
+        font-size: 3vw;
+        float: none;
+    }
+    #userTableDiv {
+        display: block;
+        font-size: 3vw;
+        float: none;
+    }
+    label {
+        font-size: 4vw;
+    }
+}
